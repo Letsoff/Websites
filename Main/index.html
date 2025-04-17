@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einfache Webseite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Willkommen!</h1>
+        <p>Dies ist eine einfache HTML-Webseite.</p>
+        <label class="switch"><input type="checkbox" id="dakrModeSwitch" onclick="darkModeFunction()"><span class="slider round"></span></label><br>
+        <button class="button" name="darkMode" onclick="darkModeOff()">Dunkelmodus aus</button>
+        <button class="button" name="darkMode" onclick="darkModeOn()">Dunkelmodus an</button>
+    </div>
+
+    <div class="container">
+        <h1>Zähler</h1>
+        <p>Dieser Knopf zählt, wie oft er gedrückt wurde.</p>
+        <p><span id="counter">0</span></p>
+        <button class="button" name="increment" onclick="incrementCounter()">Erhöhe den Zähler</button> <br>
+        <button class="button" name="decrement" onclick="decrementCounter()">Verringere den Zähler</button> <br>
+        <button class="button" name="halve" onclick="halveCounter()">Halbiere die Zahl</button> <br>
+        <button class="button" name="round" onclick="roundCounter()">Runde die Zahl</button> <br>
+    </div>
+
+    <div class="container">
+        <h1>Taschenrechner</h1>
+        <p><span id="calculatorResult">0</span></p>
+
+        <button class="buttonGrey" name="buttonPlus">+</button>
+        <button class="buttonGrey" name="buttonMinus">-</button>
+        <button class="buttonGrey" name="buttonMultiply">x</button>
+        <br>
+        <button class="buttonBlack" name="buttonSeven">7</button>
+        <button class="buttonBlack" name="buttonEight">8</button>
+        <button class="buttonBlack" name="buttonNine">9</button>
+        <br>
+        <button class="buttonBlack" name="buttonFour">4</button>
+        <button class="buttonBlack" name="buttonFive">5</button>
+        <button class="buttonBlack" name="buttonSix">6</button>
+        <br>
+        <button class="buttonBlack" name="buttonOne">1</button> <button class="buttonBlack" name="buttonTwo">2</button> <button class="buttonBlack" name="buttonThree">3</button> <br>
+        <button class="buttonBlack" name="buttonZero">0</button>
+        <button class="buttonBlack" name="buttonEquals">=</button> <br>
+        
+        <button class="button" name="1">Runde die Zahl</button> <button class="button" name="2">Runde die Zahl</button> <button class="button" name="3">Runde die Zahl</button> <br>
+        <button class="button" name="1">Runde die Zahl</button> <button class="button" name="2">Runde die Zahl</button> <button class="button" name="3">Runde die Zahl</button> <br>
+    </div>
+
+    <div class="container">
+        <h1>Benutzernamen-finder</h1>
+        <p>Vorname</p>
+        <input type="text" name="surName">
+        <p>Nachname</p>
+        <input type="text" name="lastName">
+    </div>
+
+    <div class="container">
+        <h1>Ladeanimationen</h1>
+        <span id="ladeanimationeins">-</span>
+        <br> <br>
+        <button class="button" name="buttonstartladeanimationeins" id="ladeanimationeins" onclick="startLadeAnimationEins()">Animation 1 starten</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
